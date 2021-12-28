@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Raleway:wght@400;500;600;700&display=swap');
+@import url('//db.onlinewebfonts.com/c/458b9ca1eb99380d4fac745b57af22f0?family=Harriet+Text+Light');
+
+
+:root {
+    --main-font: 'Raleway', sans-serif;
+    --nav-font: 'IBM Plex Mono', monospace;
+
+    --main-color: #282828;
+
+    --palette1: #e7d4a4;
+    --palette2: #e7a4d4;
+    --palette3: #557c55;
+    --palette4: #facc15;
+}
+
+* {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body{
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+
+button {
+    border: solid #557c55 4px;
+    background: unset;
+    padding: 5px 5px;
+    font-family: var(--nav-font);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #facc15;
+    margin-right: 1rem;
+    position: relative;
+}
+
+button::before {
+    transform: scaleX(0);
+    transform-origin: top right;
+}
+
+button:hover::before {
+    transform: scaleX(1);
+    transform-origin: top left;
+}
+
+button::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background-color: #557c55;
+    z-index: -1;
+    transition: transform .3s ease;}
+
+.nav-links ul{
+    display: flex;
+    gap: 4rem;
+}
+
+ .menu{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    color: #facc15;
+    position: relative;
+}
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    gap: 50px;
+    margin-top: -20px;
+    margin-left: 50px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    /*text-decoration: underline;*/
+    color: #ffff;
+    line-height: 160%;
+}
+
+.main-text{margin-top: -30px}
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.1rem;
+    color: var(--palette1);
+}
+
+.picture{
+    width: 340px;
+    height: 330px;
+    background: var(--palette1);
+    border-radius: 100%;
+    display: -webkit-box;
+    margin-top: 5rem;
+}
+
+#makil{
+    margin-top: -6rem;
+    animation: 2s linear infinite alternate slide;
+}
+
+#ui{
+    position: absolute;
+    left: 500px;
+    top: 140px;
+    width: 78.22px;
+    height: 77.42px;
+}
+
+#ipul{
+    position: absolute;
+    top: 185px;
+    left: 100px;
+}
+
+#13{
+    position: absolute;
+    left: 230.63px;
+    top: 616px;
+}
+
+.circle1{
+    position: relative;
+    background-color: var(--palette1);
+    border-radius: 100%;
+    width: 70.5px;
+    height: 69.78px;
+    margin-top: -80px;
+    z-index: -1;
+    margin-left: -10px;
+    /*animation: 4s linear infinite alternate slide;*/
+}
+
+.circle2{
+    position: relative;
+    background-color: var(--palette2);
+    border-radius: 100%;
+    width: 80.22px;
+    height: 79.4px;
+    margin-top: -100px;
+    z-index: -1;
+    margin-left: -10px;
+    /*animation: 4s linear infinite alternate slide;*/
+}
+
+.circle3{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background-color: var(--palette3);
+    border-radius: 100%;
+    z-index: -1;
+    margin-left: -10px;
+    margin-top: -100px;
+    /*animation: 4s linear infinite alternate slide;*/
+}
+
+footer{
+    align-content: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: 15px;
+}
+
+
+.icon-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    gap: -10px;
+}
+
+
+.text-footer{
+    color: var(--palette1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu::before {
+    transform: scaleX(0);
+    transform-origin: top right;
+}
+
+.menu:hover::before {
+    transform: scaleX(1);
+    transform-origin: top left;
+}
+
+.menu::before {
+    content: " ";
+    display: flex;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    border-bottom: solid var(--palette3) 2px;
+    z-index: -1;
+    transition: transform .3s ease;
+
+}
+
+
+html {
+    block-size: 100%;
+    inline-size: 100%;
+    scroll-behavior: smooth;
+}
+
+.ui{
+    left: 0;
+    top: -15px;
+    position: relative;
+    animation: 1.5s linear infinite alternate slide;
+}
+
+@keyframes slide {
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.ipul{
+    left: 0;
+    top: -10px;
+    position: relative;
+    animation: 1.5s linear infinite alternate slide;
+}
+
+.tigabelas{
+    left: 0;
+    top: -15px;
+    position: relative;
+    animation: 1.5s linear infinite alternate slide;
+}
+
+.blog{
+    border: none !important;
+    border-top: solid 1px #bdbdbd !important;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.blog .img-blog{
+    width: fit-content;
+    margin-top: 25px;
+    height: 300px;
+}
+
+.blog .img-blog img{
+    width: fit-content;
+    height: fit-content;
+}
+
+.blog h1{
+    line-height: 120%;
+    font-size: 28px !important;
+}
+
+.blog p{
+    text-align: -webkit-left;
+    font-weight: 500;
+    width: 700px;
+    !important;
+}
+
+#tb{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: normal;
+    color: white;
+    margin: 20px 0;
+}
+
+.harriet{
+    font-family: 'Harriet Text Light', sans-serif;
+    line-height: 160%;
+}
+
+.disclaimer{
+    display: flex;
+    height: auto;
+    width: 700px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 10px 0;
+}
+
+.disclaimer a{
+    color: #facc15;
+    text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
