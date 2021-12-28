@@ -1,0 +1,116 @@
+nav{
+    position: fixed ;
+    justify-items: stretch;
+    width: 1140px;
+    background-color: #282828;
+    z-index: 10;
+    max-height: 100px;
+    min-height: 50px;
+!important;
+}
+
+.main-wraper{
+    margin: auto;
+    display: flex;
+    position: relative;
+    border: solid #ffffff 5px;
+    height: 2000px;
+    align-items: normal;
+    justify-items: stretch;
+    width: content-box;
+}
+
+.demo-card-wrapper p ol h1{
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+.paragraph{
+    display: block;
+    text-align: justify;
+    width: 1000px;
+    height: 1800px;
+    color: white;
+    justify-content: stretch;
+    line-height: 30px;
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    !important;
+
+}
+
+.paragraph .heading{
+    text-align: center !important;
+}
+
+.paragraph .dosen{
+    display: flex;
+    flex-direction: row;
+    column-count: 2;
+    gap: 100px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    /*text-align: center;*/
+}
+
+.paragraph .dosen a{
+    color: #ffffff !important;
+}
+
+h1{
+    margin-top: 50px !important;
+}
+
+nav{
+    border-bottom: #ffffff !important;
+}
+
+.description{
+    display: flex;
+    border: solid #ffffff 5px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section{
+    margin-top: 30px;
+    gap: 10px !important;
+}
+
+.p{
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 160%;
+    font-weight: 500;
+    width: 600px;
+    margin: 5px 5px;
+    !important;
+}
+
+.about{
+    margin-bottom: 10px;
+}
+
+.me{
+    color: #facc15;
+    text-decoration: underline;
+    text-underline: #facc15;
+}
+
+.aboutme{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    !important;
+}
